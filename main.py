@@ -8,12 +8,12 @@ import streamlit as st
 st.write("""
 # Diabetes Detection
 Detect if someone has diabetes using Machine Learning and Python!
-""")
+""")    #   Yeh webapp mei text display krne k liye h
 
 image = Image.open("C:/Users/Pranshul/PycharmProjects/pythonProject/Diabetes Detection using ML and Python.jpeg")
-st.image(image, caption="ML", use_column_width=True)
+st.image(image, caption="ML", use_column_width=True)    #   Yeh image kholne k/access krne k liye h
 
-df = pd.read_csv("C:/Users/Pranshul/PycharmProjects/pythonProject/datasets_4511_6897_diabetes.csv")
+df = pd.read_csv("C:/Users/Pranshul/PycharmProjects/pythonProject/datasets_4511_6897_diabetes.csv") #   Data processing 
 st.subheader("Data Information: ")
 
 st.dataframe(df)
